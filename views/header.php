@@ -7,6 +7,7 @@
 		<link rel="title icon" href="./images/logo.webp">
     	<!-- bootstrap CSS-->
     	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    	<!-- MDBOOTSTRAP CSS-->
     	<!-- BOOTSTRAP JS -->
     	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     	<!-- MATERIALIZE ICONS -->
@@ -18,6 +19,9 @@
     		}
     		.brand-grey {
     			color: #424242;
+    		}
+    		.brand-orange-background: {
+    			background-color: #D78617 !important;
     		}
     		.brand-orange {
     			color: #D78617 !important
@@ -46,6 +50,15 @@
     			outline: none;
     			text-decoration: none;
     		}
+    		.review-card:hover {
+    			transform: scale(1.05) !important;
+    		}
+    		.brand-side-borders {
+    			border-right: solid;
+    			border-right-color: #D78617;
+    			border-left: solid;
+    			border-left-color: #D78617;
+    		}
     	</style>
 	</head>
 	<body class="brand-background">
@@ -59,10 +72,10 @@
       				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
       					<li></li>
         				<li class="nav-item">
-          					<a class="nav-link brand-orange" aria-current="page" href="#">Home</a>
+          					<a class="nav-link brand-orange" aria-current="page" href="./index.php">Home</a>
         				</li>
         				<li class="nav-item">
-          					<a class="nav-link brand-orange" href="#">About</a>
+          					<a class="nav-link brand-orange" href="./about.php">About</a>
         				</li>
         				<li class="nav-item">
         					<a class="nav-link brand-orange" href="#">Shop</a>
@@ -87,7 +100,7 @@
       				</ul>
       				<ul class="navbar-nav">
       					<li class="nav-item">
-      						<a class="nav-link brand-orange" href="#"><i class="material-icons">perm_identity</i></a>
+      						<a class="nav-link brand-orange" href="./login.php"><i class="material-icons">perm_identity</i></a>
       					</li>
       					<li class="nav-item">
       						<a class="nav-link brand-orange"href="#"><i class="material-icons">shopping_cart</i></a>
