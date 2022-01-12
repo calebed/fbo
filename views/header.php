@@ -78,7 +78,7 @@
           					<a class="nav-link brand-orange" href="./about.php">About</a>
         				</li>
         				<li class="nav-item">
-        					<a class="nav-link brand-orange" href="#">Shop</a>
+        					<a class="nav-link brand-orange" href="./shop.php">Shop</a>
         				</li>
         				<li class="nav-item">
         					<a class="nav-link brand-orange" href="#">Services</a>

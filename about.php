@@ -8,5 +8,25 @@
 			</div>
 		</div>
 	</div>
+
+	<?php
+		$conn = mysqli_connect('localhost', 'caleb', 'password', 'flartbranchoutdoors');
+
+		// check connection
+
+		if(!$conn) {
+			echo 'Connection error: ' + mysqli_connect_error();
+		}
+
+		$sql = 'SELECT name, email, id FROM clients';
+		$result = mysqli_query($conn, $sql);
+
+		// fetch rows
+		$clients = mysqli_fetch_all($result, MYSQLI_ASSOC);
+		print_r($clients);
+
+		mysqli_free_result($result);
+
+	 ?>
 <?php include("./views/footer.php"); ?>	
 
