@@ -15,14 +15,14 @@
 			?>
 			<div class="col-md mx-3">
 				<div class="card brand-background brand-side-borders my-3">
-					<div id="<?php echo 'reviewCarousel'.$x; ?>" class="carousel slide mx-auto" data-bs-ride="carousel">
+					<div id="<?php echo 'reviewCarousel'.$x; ?>" class="carousel slide data-bs-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block"  src=<?php echo $images[0]; ?>>
+								<img class="d-block mx-auto" src=<?php echo $images[0]; ?>>
 							</div>
 							<?php for($i=1; $i < sizeof($images); $i++) { ?>
 								<div class="carousel-item">
-									<img class="d-block" src=<?php echo $images[$i]?> >
+									<img class="d-block mx-auto" src=<?php echo $images[$i]?> >
 								</div>
 							<?php } ?>
 						</div>
@@ -38,6 +38,7 @@
 					<h5 class="card-title text-center" style="color:white;"> <?php echo $product['name'] ?> </h5>
 					<p class="card-text text-center" style="color:white;"><?php echo $product['description']?></p>
 					<p class="card-text text-center" style="color:white;"><?php echo '$'.$product['price']?></p> 
+					<a href="index.php" class="btn btn-secondary mx-auto" style="background-color:#D78617 !important ; max-width: 100px;">More Info</a>
 				</div>
 			</div>
 			<?php $x = $x+1; ?>
